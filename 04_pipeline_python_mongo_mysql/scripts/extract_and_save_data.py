@@ -64,3 +64,6 @@ if __name__ == "__main__":
     # Inserting the data into our cluster-> database -> collection and returning number of inserted entries
     inserted_entries_num = insert_data(collection, data_json)
     print(f"Number of inserted entries: {inserted_entries_num}")
+
+    # Closing the connection
+    client.close()
